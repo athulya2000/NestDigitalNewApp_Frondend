@@ -16,7 +16,7 @@ readvalues=()=>{
   let data:any={"username":this.username,"password":this.password}
   console.log(data)
   if(this.username=="nestdigital" && this.password=="nest"){
-    this.route.navigate(['/'])
+    this.route.navigate(['/addemployee'])
   }
 }
 }
