@@ -38,4 +38,13 @@ export class ApiService {
   securityProfile=(profile:any)=>{
     return this.http.post("http://localhost:8080/viewsecurityprofile",profile)
   }
+  addvisitorsLog=(log:any)=>{
+    return this.http.post("http://localhost:8080/addvisitorslog",log)
+  }
+  viewallVisitorslog=()=>{
+    return this.http.get("http://localhost:8080/viewallvisitorslog")
+  }
+  viewDailyvisitors=(view:any)=>{
+    return this.http.post("http://localhost:8080/viewdailyvisitorslog",view)
+  }
 }
