@@ -24,6 +24,9 @@ readValues=()=>{
         alert("leave applied successfully")
         window.location.reload();
       }
+      else{
+        alert("leave doesnt apply")
+      }
     }
   )
 
