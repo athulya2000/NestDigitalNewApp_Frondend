@@ -23,6 +23,9 @@ import { SecurityProfileComponent } from './security-profile/security-profile.co
 import { VisitorsLogComponent } from './visitors-log/visitors-log.component';
 import { ViewallVisitorslogComponent } from './viewall-visitorslog/viewall-visitorslog.component';
 import { DailyVisitorslogComponent } from './daily-visitorslog/daily-visitorslog.component';
+import { EmployeeLogComponent } from './employee-log/employee-log.component';
+import { ViewallemployeeLogComponent } from './viewallemployee-log/viewallemployee-log.component';
+import { DailyemployeelogComponent } from './dailyemployeelog/dailyemployeelog.component';
 
 const myRoute:Routes=[
   {
@@ -76,8 +79,19 @@ const myRoute:Routes=[
   {
     path:"dailyvisitors",
     component:DailyVisitorslogComponent
+  },
+  {
+    path:"employeelog",
+    component:EmployeeLogComponent
+  },
+  {
+    path:"viewallemployeelog",
+    component:ViewallemployeeLogComponent
+  },
+  {
+    path:"dailyemployeelog",
+    component:DailyemployeelogComponent
   }
-  
 ]
 
 
@@ -101,6 +115,9 @@ const myRoute:Routes=[
     VisitorsLogComponent,
     ViewallVisitorslogComponent,
     DailyVisitorslogComponent,
+    EmployeeLogComponent,
+    ViewallemployeeLogComponent,
+    DailyemployeelogComponent,
     
   ],
   imports: [

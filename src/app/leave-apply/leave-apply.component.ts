@@ -15,7 +15,7 @@ todate=""
 constructor(private api:ApiService){}
 
 readValues=()=>{
-  let data:any={"leavetype":this.leavetype,"remarks":this.remarks,"fromdate":this.fromdate,"todate":this.todate}
+  let data:any={employeeid:localStorage.getItem("employeeId"),"leavetype":this.leavetype,"remarks":this.remarks,"fromdate":this.fromdate,"todate":this.todate}
   console.log(data)
   this.api.leaveApply(data).subscribe(
     (response:any)=>{
