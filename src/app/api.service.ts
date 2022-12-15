@@ -56,4 +56,10 @@ export class ApiService {
   dailyemployeelog=(data:any)=>{
     return this.http.post("http://localhost:8080/viewdailyemployeelog",data)
   }
+  viewallLeave=()=>{
+    return this.http.get("http://localhost:8080/viewallleave")
+  }
+  viewallSecurity=()=>{
+    return this.http.get("http://localhost:8080/viewallsecurity")
+  }
 }
