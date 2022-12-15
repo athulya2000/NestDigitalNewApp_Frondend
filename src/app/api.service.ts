@@ -29,4 +29,13 @@ export class ApiService {
   leaveApply=(leave:any)=>{
     return this.http.post("http://localhost:8080/applyleave",leave)
   }
+  addSecurity=(security:any)=>{
+    return this.http.post("http://localhost:8080/addsecurity",security)
+  }
+  securityLogin=(login:any)=>{
+    return this.http.post("http://localhost:8080/securitylogin",login)
+  }
+  securityProfile=(profile:any)=>{
+    return this.http.post("http://localhost:8080/viewsecurityprofile",profile)
+  }
 }

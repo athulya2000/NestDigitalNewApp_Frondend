@@ -16,6 +16,10 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { ViewEmployeeProfileComponent } from './view-employee-profile/view-employee-profile.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
+import { AddSecurityGuardComponent } from './add-security-guard/add-security-guard.component';
+import { Navbar3Component } from './navbar3/navbar3.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { SecurityProfileComponent } from './security-profile/security-profile.component';
 
 const myRoute:Routes=[
   {
@@ -45,6 +49,18 @@ const myRoute:Routes=[
   {
     path:"applyleave",
     component:LeaveApplyComponent
+  },
+  {
+    path:"addsecurity",
+    component:AddSecurityGuardComponent
+  },
+  {
+    path:"securitylogin",
+    component:SecurityLoginComponent
+  },
+  {
+    path:"securityprofile",
+    component:SecurityProfileComponent
   }
   
 ]
@@ -63,6 +79,10 @@ const myRoute:Routes=[
     ViewEmployeeProfileComponent,
     Navbar2Component,
     LeaveApplyComponent,
+    AddSecurityGuardComponent,
+    Navbar3Component,
+    SecurityLoginComponent,
+    SecurityProfileComponent,
     
   ],
   imports: [

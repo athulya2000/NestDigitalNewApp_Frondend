@@ -1,0 +1,25 @@
+<app-navbar1></app-navbar1>
+<div class="container">
+    <div class="row">    
+        <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Username</label>
+                    <input  name="username" [(ngModel)]="username"  type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" name="password" [(ngModel)]="password" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+                    <button (click)="readValues()" class="btn btn-secondary"> Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-sm-6 col md-6 col-lg-6 col-xl-6 col-xxl-6 text-center">
+            <img width="500px" src="assets/images/security.svg" alt="">
+        </div>
+    </div>
+</div>
+
+
