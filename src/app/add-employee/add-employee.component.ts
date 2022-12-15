@@ -33,9 +33,9 @@ readValues=()=>{
       this.phoneno=""
       if(response.status=="success"){
         alert("employee added successfully")
-        let employeeid=response.employeeid
-        console.log(employeeid)
-        localStorage.setItem("employeeId",employeeid)
+        // let employeeid=response.employeeid
+        // console.log(employeeid)
+        // localStorage.setItem("employeeId",employeeid)
       }
       
 
