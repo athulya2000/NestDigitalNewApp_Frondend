@@ -15,6 +15,7 @@ import { SearchemployeeComponent } from './searchemployee/searchemployee.compone
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { ViewEmployeeProfileComponent } from './view-employee-profile/view-employee-profile.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
+import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
 
 const myRoute:Routes=[
   {
@@ -40,6 +41,10 @@ const myRoute:Routes=[
   {
     path:"employeeprofile",
     component:ViewEmployeeProfileComponent
+  },
+  {
+    path:"applyleave",
+    component:LeaveApplyComponent
   }
   
 ]
@@ -57,6 +62,7 @@ const myRoute:Routes=[
     EmployeeLoginComponent,
     ViewEmployeeProfileComponent,
     Navbar2Component,
+    LeaveApplyComponent,
     
   ],
   imports: [
