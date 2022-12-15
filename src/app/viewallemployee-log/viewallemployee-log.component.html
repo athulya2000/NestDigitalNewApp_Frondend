@@ -1,0 +1,22 @@
+<app-navbar3></app-navbar3>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data" >
+                    <div class="card" style="height:30rem" >
+                        <img height="300px" src="https://www.nicepng.com/png/detail/207-2074901_woman-icon-avatar-icon.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Employee Id: {{i.employeeid}}</h5>
+                          <p class="card-text">Date: {{i.date}}</p>
+                          <p class="card-text">Entry Date Time: {{i.entrydatetime}}</p>
+                          <p class="card-text">Exit Date Time: {{i.exitdatetime}}</p>
+                          
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
