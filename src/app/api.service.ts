@@ -26,4 +26,7 @@ export class ApiService {
   viewEmployeeProfile=(profile:any)=>{
     return this.http.post("http://localhost:8080/viewprofileemployee",profile)
   }
+  leaveApply=(leave:any)=>{
+    return this.http.post("http://localhost:8080/applyleave",leave)
+  }
 }
