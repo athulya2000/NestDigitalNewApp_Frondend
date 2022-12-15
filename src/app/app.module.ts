@@ -20,6 +20,9 @@ import { AddSecurityGuardComponent } from './add-security-guard/add-security-gua
 import { Navbar3Component } from './navbar3/navbar3.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { SecurityProfileComponent } from './security-profile/security-profile.component';
+import { VisitorsLogComponent } from './visitors-log/visitors-log.component';
+import { ViewallVisitorslogComponent } from './viewall-visitorslog/viewall-visitorslog.component';
+import { DailyVisitorslogComponent } from './daily-visitorslog/daily-visitorslog.component';
 
 const myRoute:Routes=[
   {
@@ -61,6 +64,18 @@ const myRoute:Routes=[
   {
     path:"securityprofile",
     component:SecurityProfileComponent
+  },
+  {
+    path:"addvisitorslog",
+    component:VisitorsLogComponent
+  },
+  {
+    path:"viewvisitorslog",
+    component:ViewallVisitorslogComponent
+  },
+  {
+    path:"dailyvisitors",
+    component:DailyVisitorslogComponent
   }
   
 ]
@@ -83,6 +98,9 @@ const myRoute:Routes=[
     Navbar3Component,
     SecurityLoginComponent,
     SecurityProfileComponent,
+    VisitorsLogComponent,
+    ViewallVisitorslogComponent,
+    DailyVisitorslogComponent,
     
   ],
   imports: [
