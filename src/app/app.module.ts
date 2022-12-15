@@ -26,6 +26,9 @@ import { DailyVisitorslogComponent } from './daily-visitorslog/daily-visitorslog
 import { EmployeeLogComponent } from './employee-log/employee-log.component';
 import { ViewallemployeeLogComponent } from './viewallemployee-log/viewallemployee-log.component';
 import { DailyemployeelogComponent } from './dailyemployeelog/dailyemployeelog.component';
+import { ViewAllLeaveComponent } from './view-all-leave/view-all-leave.component';
+import { ViewAllSecurityComponent } from './view-all-security/view-all-security.component';
+import { Navbar4Component } from './navbar4/navbar4.component';
 
 const myRoute:Routes=[
   {
@@ -91,6 +94,14 @@ const myRoute:Routes=[
   {
     path:"dailyemployeelog",
     component:DailyemployeelogComponent
+  },
+  {
+    path:"viewallleave",
+    component:ViewAllLeaveComponent
+  },
+  {
+    path:"viewallsecurity",
+    component:ViewAllSecurityComponent
   }
 ]
 
@@ -118,6 +129,9 @@ const myRoute:Routes=[
     EmployeeLogComponent,
     ViewallemployeeLogComponent,
     DailyemployeelogComponent,
+    ViewAllLeaveComponent,
+    ViewAllSecurityComponent,
+    Navbar4Component,
     
   ],
   imports: [
