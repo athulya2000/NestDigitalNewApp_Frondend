@@ -20,4 +20,10 @@ export class ApiService {
   deletaEmployee=(data:any)=>{
     return this.http.post("http://localhost:8080/deleteemployee",data)
   }
+  employeeLogin=(login:any)=>{
+    return this.http.post("http://localhost:8080/employeelogin",login)
+  }
+  viewEmployeeProfile=(profile:any)=>{
+    return this.http.post("http://localhost:8080/viewprofileemployee",profile)
+  }
 }
