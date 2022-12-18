@@ -1,44 +1,40 @@
 <app-employee-navbar></app-employee-navbar>
 <div class="container">
-    <div class="rowg-3 mt-4">
+    <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3 mt-4" *ngFor="let j of Leave">
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Employee Code</label>
-                    <input value="{{j.employeecode}}" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Employee Name</label>
-                    <input value="{{j.employeename}}" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Leave Type</label>
-                    <input value="{{j.leavetype}}" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">From Date</label>
-                    <input value="{{j.fromdate}}" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">To Date</label>
-                    <input value="{{j.todate}}" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Leave Apply Date</label>
-                    <input value="{{j.leaveapplydate}}" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Status</label>
-                    <input value="{{j.status}}" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button type="button" class="btn btn-success">Accept</button>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button type="button" class="btn btn-danger">Reject</button>
-                </div>
+            <table class="table table-striped text-centre">
+                <thead>
+                  <tr>
+                    <th scope="col">Employee Code</th>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">Leave Type</th>
+                    <th scope="col">Remarks</th>
+                    <th scope="col">From Date</th>
+                    <th scope="col">To Date</th>
+                    <th scope="col">Leave Apply Date</th>
+                    <th scope="col">Status</th>
+                    
+                    
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let j of Leave">
+                    
+                    <td>{{j.employeecode}}</td>
+                    <td>{{j.employeename}}</td>
+                    <td>{{j.leavetype}}</td>
+                    <td>{{j.remarks}}</td>
+                    <td>{{j.fromdate}}</td>
+                    <td>{{j.todate}}</td>
+                    <td>{{j.leaveapplydate}}</td>
+                    <td>{{j.status}}</td>
+                    <td><button (click)="readValue(j.employeeid)" class="btn btn-success">Accept</button></td>
+                    <td><button (click)="reject(j.employeeid)" class="btn btn-danger">Reject</button></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
         </div>
     </div>
 </div>
