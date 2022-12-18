@@ -62,4 +62,16 @@ export class ApiService {
   viewallSecurity=()=>{
     return this.http.get("http://localhost:8080/viewallsecurity")
   }
+  updatestatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/updatestatus",data)
+  }
+  viewStatus=(view:any)=>{
+    return this.http.post("http://localhost:8080/viewstatus",view)
+  }
+  leavePending=(data:any)=>{
+    return this.http.post("http://localhost:8080/leavecount",data)
+  }
+  viewPendingLeaves=(view:any)=>{
+    return this.http.post("http://localhost:8080/viewpendingleaves",view)
+  }
 }

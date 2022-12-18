@@ -29,6 +29,8 @@ import { DailyemployeelogComponent } from './dailyemployeelog/dailyemployeelog.c
 import { ViewAllLeaveComponent } from './view-all-leave/view-all-leave.component';
 import { ViewAllSecurityComponent } from './view-all-security/view-all-security.component';
 import { Navbar4Component } from './navbar4/navbar4.component';
+import { LeaveStatusComponent } from './leave-status/leave-status.component';
+import { LeavespendingComponent } from './leavespending/leavespending.component';
 
 const myRoute:Routes=[
   {
@@ -102,6 +104,14 @@ const myRoute:Routes=[
   {
     path:"viewallsecurity",
     component:ViewAllSecurityComponent
+  },
+  {
+    path:"leavestatus",
+    component:LeaveStatusComponent
+  },
+  {
+    path:"viewpendingleaves",
+    component:LeavespendingComponent
   }
 ]
 
@@ -132,6 +142,8 @@ const myRoute:Routes=[
     ViewAllLeaveComponent,
     ViewAllSecurityComponent,
     Navbar4Component,
+    LeaveStatusComponent,
+    LeavespendingComponent,
     
   ],
   imports: [
