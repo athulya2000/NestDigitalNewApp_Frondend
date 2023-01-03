@@ -1,4 +1,5 @@
 <app-navbar2></app-navbar2>
+<div class="bgm">
 <div class="container">
     <div class="row mt-4">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -16,8 +17,8 @@
         </div>
         </figure> 
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngFor="let i of searchData">
-               <label for="" class="form-label">Leave Status</label>
-            <input type="text" class="form-cotrol" *ngIf="i.status==1;else rejected" value="Accepted" >
+               <label for="" class="form-label" style="color: aliceblue;">Leave Status</label>
+               <input type="text" class="form-cotrol" *ngIf="i.status==1;else rejected" value="Accepted" >
             <ng-template #rejected>
                <input type="text" class="form-control" value="Rejected" >
             </ng-template>
@@ -26,4 +27,5 @@
     
 </div>
     </div>
+</div>
 </div>

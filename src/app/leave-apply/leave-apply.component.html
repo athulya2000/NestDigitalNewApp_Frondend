@@ -1,10 +1,11 @@
 <app-navbar2></app-navbar2>
+<div class="bgm">
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Leave Type</label>
+                    <label for="" class="form-label" style="color: azure;">Leave Type</label>
                     <select name="leavetype" [(ngModel)]="leavetype" id="" class="form-control">
                         <option value="">Select</option>
                         <option value="casual">Casual Leave</option>
@@ -14,15 +15,15 @@
                 </div>
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Remarks</label>
+                    <label for="" class="form-label" style="color: azure;">Remarks</label>
                     <input name="remarks" [(ngModel)]="remarks" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">From Date</label>
+                    <label for="" class="form-label" style="color: azure;">From Date</label>
                     <input type="date" name="fromdate" [(ngModel)]="fromdate" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">To Date</label>
+                    <label for="" class="form-label" style="color: azure;">To Date</label>
                     <input name="todate" [(ngModel)]="todate" type="date" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -31,4 +32,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
